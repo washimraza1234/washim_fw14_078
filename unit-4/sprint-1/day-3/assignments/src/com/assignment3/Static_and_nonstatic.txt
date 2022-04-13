@@ -1,0 +1,22 @@
+----------STATIC------------
+A static method is a method that belongs to a class, but it does not belong to an instance of that 
+class and this method can be called without the instance or object of that class. 
+Every method in java defaults to a non-static method without static keyword preceding it.
+
+Example----
+public static int sum(int a, int b)
+    {
+        // Simply returning the sum
+        return a + b;
+    }
+
+
+-----------NONSTATIC----------
+Non-static methods can access any static method and static variable, without creating an instance of the object.
+
+Example,
+public int sum(int a, int b)
+    {
+        // Returning sum of numbers
+        return a + b;
+    }
