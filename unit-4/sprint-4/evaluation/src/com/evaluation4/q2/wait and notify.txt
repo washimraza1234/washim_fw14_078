@@ -1,0 +1,11 @@
+wait();
+
+      wait() method is a part of java.lang.Object class. When wait() method is called, the calling thread stops its execution until notify() or notifyAll() method is invoked by some other Thread.
+	
+	public final void wait()
+
+notify();
+
+      The notify() method is defined in the Object class, which is Java’s top-level class. It’s used to wake up only one thread that’s waiting for an object, and that thread then begins execution. The thread class notify() method is used to wake up a single thread.
+
+	public final void notify()
