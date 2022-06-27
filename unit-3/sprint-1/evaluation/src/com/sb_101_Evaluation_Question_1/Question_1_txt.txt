@@ -1,0 +1,20 @@
+=>If we remove Synchronized keyword from a method of any class A or Class B then the Deadlock can be prevented.
+
+Example,
+class A {
+public void funA(B b1){
+System.out.println("funA of A starts");
+b1.fun2();
+System.out.println("funA of A ends");
+}
+public synchronized void fun1(){
+System.out.println("inside fun1 of A");
+}
+}
+
+
+
+wait()=> The wait() method causes the current thread to wait indefinitely until another thread either invokes notify() for this object or notifyAll().
+
+notify()=> For all threads waiting on this object's monitor (by using any one of the wait() methods), the method notify() notifies any one of them to wake up arbitrarily.
+           The choice of exactly which thread to wake is nondeterministic and depends upon the implementation.
