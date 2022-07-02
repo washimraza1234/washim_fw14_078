@@ -1,0 +1,1 @@
+Transient Keyword is only applicable with the variables and we can use it in the class which implements seriaziable interface. When we use transient keyword we cannot serialize the variable i.e we cannot print the exact value of that varible. This keyword plays an important role to meet security constraints in Java.
