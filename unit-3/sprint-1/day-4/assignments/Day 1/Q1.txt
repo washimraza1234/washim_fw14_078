@@ -1,0 +1,62 @@
+>create table student(ID int, name varchar(17), country_code varchar(3),district varchar(20), Population int);
+
+mysql> desc student;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| ID           | int         | YES  |     | NULL    |       |
+| name         | varchar(17) | YES  |     | NULL    |       |
+| country_code | varchar(3)  | YES  |     | NULL    |       |
+| district     | varchar(20) | YES  |     | NULL    |       |
+| Population   | int         | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+
+
+mysql> insert into student values(
+    -> 3878,'washim','ABC', 'Arizona', 202705
+    -> );
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into student values(
+    -> 3965,'rahul','DEF', 'California', 90000
+    -> );
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values(
+    -> 3973,'ram','GHI', 'Kolkata', 121780
+    -> );
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values(
+    -> 3977,'Shyam','KLM', 'Hydrabad', 120758
+    -> );
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values(
+    -> 3982,'Abdul','UVW', 'Chennai', 87456
+    -> );
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from student;
++------+--------+--------------+------------+------------+
+| ID   | name   | country_code | district   | Population |
++------+--------+--------------+------------+------------+
+| 3878 | washim | ABC          | Arizona    |     202705 |
+| 3965 | rahul  | DEF          | California |      90000 |
+| 3973 | ram    | GHI          | Kolkata    |     121780 |
+| 3977 | Shyam  | KLM          | Hydrabad   |     120758 |
+| 3982 | Abdul  | UVW          | Chennai    |      87456 |
++------+--------+--------------+------------+------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from student where Population > 100000;
++------+--------+--------------+----------+------------+
+| ID   | name   | country_code | district | Population |
++------+--------+--------------+----------+------------+
+| 3878 | washim | ABC          | Arizona  |     202705 |
+| 3973 | ram    | GHI          | Kolkata  |     121780 |
+| 3977 | Shyam  | KLM          | Hydrabad |     120758 |
++------+--------+--------------+----------+------------+
+3 rows in set (0.01 sec)
+
+mysql>

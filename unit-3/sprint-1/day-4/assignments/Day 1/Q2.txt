@@ -1,0 +1,17 @@
+mysql> select Population from student where district='California';
++------------+
+| Population |
++------------+
+|      90000 |
+|     121333 |
++------------+
+
+select sum(Population) from student where district='California';
++-----------------+
+| sum(Population) |
++-----------------+
+|          211333 |
++-----------------+
+1 row in set (0.01 sec)
+
+
