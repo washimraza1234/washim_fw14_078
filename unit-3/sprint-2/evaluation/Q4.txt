@@ -1,0 +1,26 @@
+a)  Normalization is a technique for organizing data in a database. It is important that a database is normalized to minimize redundancy (duplicate data) and to ensure only related data is stored in each table. It also prevents any issues stemming from database modifications such as insertions, deletions, and updates.
+
+
+First Normal Form (1NF):
+-Data is stored in tables with rows uniquely identified by a primary key
+-Data within each table is stored in individual columns in its most reduced form
+
+2NF:
+-Everything from 1NF
+-Only data that relates to a table’s primary key is stored in each table.
+
+
+3NF:
+-Everything from 2NF
+-There are no in-table dependencies between the columns in each table.
+
+--------------------------------------------------B--------------------------------------------------------------
+b).  
+To achieve second normal form, a database must first satisfy all the conditions for 1NF. After this, satisfying 2NF requires that all data in each table relates directly to the record that the primary key of the table identifies.
+
+--> In the 2NF, relational must be in 1NF.
+--> In the second normal form, all non-key attributes are fully functional dependent on the primary key
+
+
+Example: Let's assume, a school can store the data of teachers and the subjects they teach. In a school, a teacher can teach more than one subject.
+

@@ -1,0 +1,17 @@
+A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database. Transactions access data using read and write operations. 
+In order to maintain consistency in a database, before and after the transaction, certain properties are followed. These are called ACID properties. 
+
+Abort: If a transaction aborts, changes made to the database are not visible. 
+Commit: If a transaction commits, changes made are visible. 
+
+
+Atomicity:- Transaction Manager.
+
+Consistency:-Application programmer.
+
+Isolation:-Concurrency Control Manager.
+
+Durability:-Recovery Manager.
+
+
+The ACID properties, in totality, provide a mechanism to ensure the correctness and consistency of a database in a way such that each transaction is a group of operations that acts as a single unit, produces consistent results, acts in isolation from other operations, and updates that it makes are durably stored. 
