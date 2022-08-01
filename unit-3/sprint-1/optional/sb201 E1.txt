@@ -1,0 +1,96 @@
+
+QUESTION 1:
+
+A circular dependency occurs when a bean A depends on another bean B, and the bean B depends on bean A as well:
+
+Circular dependency is that one class object creation depends upon the other class object creation. Like one class constructor calls the other class constructor thus how circular dependencies are obtained.
+
+It can be resolved by using setter injection than to go for constructor injection.
+
+Example:-
+
+	package com.masai;
+
+	public class A {
+
+	public A() { 
+ 	System.out.println("Creating instance of A"); 
+	 } 
+	private B b;
+
+	public void setB(B b) { 
+		 System.out.println("Setting property b of A instance"); 
+ 		 this.b = b; 
+		 } 
+	} 
+
+
+	then consider a similar class B.
+
+package com.masai;
+
+public class B {
+
+public B() { 
+ System.out.println("Creating instance of B"); 
+ } 
+private A a;
+
+public void setA(A a) { 
+ System.out.println("Setting property a of B instance"); 
+ this.a = a; 
+ } 
+}  
+
+
+
+
+
+If we have this configuration file:
+
+<bean id="a" class="com.masai.A"> 
+ <property name="b" ref="b" /> 
+</bean> 
+<bean id="b" class="com.masai.B"> 
+ <property name="a" ref="a" /> 
+</bean> 
+
+
+Output:-
+
+Creating instance of A
+Creating instance of B
+Setting property a of B instance
+Setting property b of A instance
+
+
+
+
+QUESTION 2:
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1. @Component
+
+The @Component annotation marks a java class as a bean so the component-scanning mechanism of spring can pick it up and pull it into the application context.
+
+2. @Repository
+
+The @Repository annotation is a specialization of the @Component annotation with similar use and functionality. In addition to importing the DAOs into the DI container, it also makes the unchecked exceptions (thrown from DAO methods) eligible for translation into Spring DataAccessException.
+
+3. @Service
+
+The @Service annotation is also a specialization of the component annotation. It doesn’t currently provide any additional behavior over the @Component annotation, but it’s a good idea to use @Service over @Component in service-layer classes because it specifies intent better.
+
+4. @Controller
+
+When we add the @Controller annotation to a class, we can use another annotation i.e. @RequestMapping; to map URLs to instance methods of a class.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
