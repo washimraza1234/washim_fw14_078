@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="t" class="com.masai.Triangle">  
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="c" class="com.masai.Circle">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+	
+	<bean id="ds" class="com.masai.DrawShape">
+		<constructor-arg ref="c"></constructor-arg>
+	</bean>
+    <!-- more bean definitions go here -->
+
+</beans>
