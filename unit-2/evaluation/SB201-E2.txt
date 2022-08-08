@@ -1,0 +1,101 @@
+Question 2:Explain MVC architecture with the help of Diagram.
+
+Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts −
+
+Model − The lowest level of the pattern which is responsible for maintaining data.
+
+View − This is responsible for displaying all or a portion of the data to the user.
+
+Controller − Software Code that controls the interactions between the Model and View.
+
+MVC is popular as it isolates the application logic from the user interface layer and supports separation of concerns. Here the Controller receives all requests for the application and then works with the Model to prepare any data needed by the View. The View then uses the data prepared by the Controller to generate a final presentable response. The MVC abstraction can be graphically represented as follows.
+
+EVENT --> CONTROLLER --> VIEW <---> MODEL
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 3:  What is the difference between SOAP-based Web Services and  Restful Web Services 
+
+
+SOAP:
+------
+i. SOAP stands for Simple Object Access Protocol.
+
+ii. SOAP is a protocol. SOAP was designed with a specification. It includes a WSDL file which has the required information on what the web service does in addition to the location of the web service.
+
+iii. SOAP cannot make use of REST since SOAP is a protocol and REST is an architectural pattern.
+
+
+REST:
+-----
+
+i. REST stands for Representational State Transfer.
+
+ii. REST is an Architectural style in which a web service can only be treated as a RESTful service if it follows the constraints of being Client Server, Stateless, Cacheable, Layered System, Uniform Interface.
+
+iii. REST can make use of SOAP as the underlying protocol for web services, because in the end it is just an architectural pattern.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Question 4: a) What are the major dependencies that we add while creating SpringBoot projects? Also mention the purpose of each.
+
+i. The default Java compiler version
+ii. UTF-8 source encoding
+iii. It inherits a Dependency Section from the spring-boot-dependency-pom. iv. It manages the version of common dependencies. It ignores the <version> v. tag for that dependencies.
+vi.  Dependencies, inherited from the spring-boot-dependencies POM
+vii. Sensible resource filtering
+viii. Sensible plugin configuration
+
+
+Question 4: b) What is the difference between PathVariable and Requestparam annotations
+
+Both annotations @RequestParam and @PathVariable in Spring MVC are used for fetching the values of request parameters. These annotations have similar purpose but some differences in use. The key difference between @RequestParam and @PathVariable is that @RequestParam used for accessing the values of the query parameters where as @PathVariable used for accessing the values from the URI template.
+
+@RequestParam:
+It is used to get the request parameters. @RequestParam automatically binds the request parameters to the arguments of your handler method. It also provides auto type conversion for some standard type like int, long, float, string, date etc.
+
+@PathVariable
+It is used to pass parameter along with the url, sometimes we need to pass parameters along with the url to get the data. Spring MVC provides support for customizing the URL in order to get data. To achieving this purpose @PathVariable annotation is used in Spring mvc framework.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 5: a) What is Lazy loading and Eager Loading. Why are they used? Explain with examples.
+
+Lazy loading is the practice of delaying load or initialization of resources or objects until they’re actually needed to improve performance and save system resources. For example, if a web page has an image that the user has to scroll down to see, you can display a placeholder and lazy load the full image only when the user arrives to its location.
+
+The benefits of lazy loading include: Reduces initial load time, Bandwidth conservation, System resource conservation.
+
+Eager Loading helps you to load all your needed entities at once; i.e., all your child entities will be loaded at single database call. This can be achieved, using the Include method, which returs the related entities as a part of the query and a large amount of data is loaded at once.
+
+Uses, Generally When relations are not too much and eager loading will be good practice to reduce further queries on server.
+
+
+
+Question 5: b) What is auto-wiring ? What are the ways with which you can configure auto-wiring in spring
+
+
+Autowiring feature of spring framework enables us to inject the object dependency implicitly. It internally uses setter or constructor injection.Autowiring can't be used to inject primitive and string values. It works with reference only.
+
+No. of ways:
+
+i. byName autowiring mode.
+
+<bean id="b" class="com.masai.B"></bean>  
+<bean id="a" class="com.masai.A" autowire="byName"></bean>  
+
+
+ii. byType autowiring mode.
+
+<bean id="b1" class="com.masai.B"></bean>  
+<bean id="a" class="com.masai.A" autowire="byType"></bean>  
+
+iii. constructor autowiring mode.
+
+<bean id="b" class="com.masai.B"></bean>  
+<bean id="a" class="com.masai.A" autowire="constructor"></bean>  
+
