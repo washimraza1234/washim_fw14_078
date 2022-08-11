@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- collaborators and configuration for this bean go here -->
+
+	<bean id="s1" class="com.masai.Student">
+		<constructor-arg name="roll" value="01"></constructor-arg>
+		<constructor-arg name="name" value="Washim"></constructor-arg>
+		<constructor-arg name="marks" value="600"></constructor-arg>
+	</bean>
+	<bean id="s2" class="com.masai.Student">
+		<constructor-arg name="roll" value="02"></constructor-arg>
+		<constructor-arg name="name" value="Riya"></constructor-arg>
+		<constructor-arg name="marks" value="500"></constructor-arg>
+	</bean>
+	<bean id="s3" class="com.masai.Student">
+		<constructor-arg name="roll" value="03"></constructor-arg>
+		<constructor-arg name="name" value="Ashika"></constructor-arg>
+		<constructor-arg name="marks" value="450"></constructor-arg>
+	</bean>
+
+
+	<bean id="cld" class="com.masai.CollegeMapTypeDependency">
+
+		<property name="theMap">
+			<map>
+				<entry key-ref="s1" value="NIIT"></entry>
+				<entry key-ref="s2" value="IIT D"></entry>
+				<entry key-ref="s3" value="IIT M"></entry>
+			</map>
+		</property>
+	</bean>
+
+
+
+</beans>
