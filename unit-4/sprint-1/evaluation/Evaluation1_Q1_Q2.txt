@@ -1,0 +1,60 @@
+QUESTION 1:
+
+What are the advantages of using Hibernate over JDBC?
+
+Answer:
+Hibernate supports relationships like One-To-Many,One-To-One, Many-To-Many, Many-To-One.
+
+This will also supports collections like List,Set,Map (Only new collections)
+
+Hibernate supports Inheritance, Associations, Collections.
+
+In hibernate if we save the derived class object, then its base class object will also be stored into the database, it means hibernate supporting inheritance.
+
+Hibernate has its own query language, i.e hibernate query language which is database independent
+So if we change the database, then also our application will works as HQL is database independent
+HQL contains database independent commands.
+
+Hibernate supports annotations, apart from XML.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+QUESTION 2:
+
+● Explain difference between JPA and Hibernate
+
+Answer:
+
+JPA
+----
+-JPA is described in javax.persistence package.
+-It describes the handling of relational data in Java applications. 
+-It is not an implementation. It is only a Java specification.
+-It is a standard API that permits to perform database operations.
+-As an object-oriented query language, it uses Java Persistence Query Language (JPQL) to execute database operations.
+
+Hibernate:
+----------
+-Hibernate is described in org.hibernate package.
+-Hibernate is an Object-Relational Mapping (ORM) tool that is used to save the Java objects in the relational database system.
+-Hibernate is an implementation of JPA.
+-It is used in mapping Java data types with SQL data types and database tables.
+-As an object-oriented query language, it uses Hibernate Query Language (HQL) to execute database operations.
+
+
+● Explain about the Layered Architecture of a Java Based Business application:
+
+Answer:
+
+Layered architectures are said to be the most common and widely used architectural framework in software development. It is also known as an n-tier architecture and describes an architectural pattern composed of several separate horizontal layers that function together as a single unit of software.
+
+PRESENTATION LAYER --> BUSINESS LOGIC LAYER --> DATABASE LAYER.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
