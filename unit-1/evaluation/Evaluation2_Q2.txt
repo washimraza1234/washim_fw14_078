@@ -1,0 +1,37 @@
+QUESTION 2:
+
+--Explain the difference between JPA and Hibernate?
+
+
+ANSWER:
+
+Answer:- JPA: 
+a.  JPA is only a specification, it is not an implementation.
+
+b. It is a set of rules and guidelines to set interfaces for implementing object-relational mapping .
+
+c. It needs a few classes and interfaces.
+
+
+HIBERNATE:
+
+a. Hibernate is an implementation of JPA guidelines.
+b. It helps in mapping Java data types to SQL data types.
+c. It is the contributor of JPA.
+
+
+
+
+--What are the advantages of using Hibernate over JDBC?
+
+Answer:- The advantages of Hibernate over JDBC are:
+
+a. Hibernate code will work well for all databases, for ex: Oracle,MySQL, etc. where as JDBC is database specific.
+
+b. No knowledge of SQL is needed because Hibernate is a set of objects and a table is treated as an object, where as to work with JDBC, one need to know SQL.
+
+c. Query tuning is not required in Hibernate. The query tuning is automatic in hibernate by using criteria queries, and the result of performance is at its best. Where as in JDBC the query tuning is to be done by the database authors.
+
+
+
+
