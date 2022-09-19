@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="d1" class="com.masai.Department">
+		<constructor-arg name="deptId" value="001" />
+		<constructor-arg name="deptName" value="IT" />
+		<constructor-arg name="location" value="Bangalore" />
+	</bean>
+
+	<bean id="d1" class="com.masai.Department">
+		<constructor-arg name="deptId" value="002" />
+		<constructor-arg name="deptName" value="HR" />
+		<constructor-arg name="location" value="Kolkata" />
+	</bean>
+
+	<bean id="d1" class="com.masai.Department">
+		<constructor-arg name="deptId" value="003" />
+		<constructor-arg name="deptName" value="Sales" />
+		<constructor-arg name="location" value="Bangalore" />
+	</bean>
+
+
+
+
+</beans>
