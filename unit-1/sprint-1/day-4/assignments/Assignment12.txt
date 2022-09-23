@@ -1,0 +1,32 @@
+1)  Explain the Java-based Spring MVC architecture.
+
+Ans: Spring MVC framework enables separation of modules namely Model, View and Controller and seamlessly handles the application integration. This enables the developer to create complex applications also using plain java classes. The model object can be passed between view and controller using maps.
+
+
+2)  What is the HTTP protocol, explain about the HTTP request and the HTTP response.
+
+Ans:  The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers. HTTP works as a request-response protocol between a client and server.
+Example: A client (browser) sends an HTTP request to the server, then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.
+
+An HTTP response is made by a server to a client. The aim of the response is to provide the client with the resource it requested, or inform the client that the action it requested has been carried out; or else to inform the client that an error occurred in processing its request.
+An HTTP response contains:
+A status line.
+A series of HTTP headers, or header fields.
+A message body, which is usually needed.
+
+
+
+An HTTP request is made by a client, to a named host, which is located on a server. The aim of the request is to access a resource on the server.
+To make the request, the client uses components of a URL (Uniform Resource Locator), which includes the information needed to access the resource. The components of a URL explains URLs.
+A correctly composed HTTP request contains the following elements:
+A request line.
+A series of HTTP headers, or header fields.
+A message body, if needed.
+
+
+3) What is the difference between WebApplication and Web-services?
+
+Ans:
+An application that the users access over the internet is called a web application. Generally, any software that is accessed through a web browser could be called a web application. When using web applications, users do not have to worry about installing and maintaining the application. Furthermore, web applications provide support for different platforms.
+
+A web service is a system of software that allows different machines to interact with each other through a network. Web services use XML, SOAP, WSDL and UDDI open standards to achieve this task. XML is a language that can be used to send messages with different platforms and different programming languages and it is used to tag data in web services.
