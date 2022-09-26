@@ -1,0 +1,25 @@
+package com.masai.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.masai.model.Employee;
+import com.masai.model.EmployeeDTO;
+
+
+@Repository
+public interface EmployeeDao extends JpaRepository<Employee, Integer>{
+	
+	 public List<Employee> findByAddress(String address);
+
+	 @Query("select e.empName,e.address  from Employee e where empid=?1")
+		public Employee getEmpNameandAdress(Integer empid);
+	 
+	 
+	 
+	 @Query("select new com.masai.model.EmployeeDTO(e.empName,e.salary,e.address) from Employee e")
+		public List<EmployeeDTO> getEmpNameAddrSal();
+}
