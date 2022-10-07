@@ -1,0 +1,78 @@
+1). When should one use Maven?
+
+Answer: Maven is chiefly used for Java-based projects, helping to download dependencies, which refers to the libraries or JAR files. The tool helps get the right JAR files for each project as there may be different versions of separate packages.
+
+
+
+2). Explain the core concepts of Maven.
+
+Answer: Maven is based on the concept of project object model (POM) file. POM is an XML file which contains project resources like source code, test code and dependencies (external JARs) etc. The POM file should be in the project’s root directory.
+
+
+
+3). Explain about the basic properties of pom.xml file.
+
+Answer: The pom. xml file contains information of project and configuration information for the maven to build the project such as dependencies, build directory, source directory, test source directory, plugin, goals etc. Maven reads the pom. xml file, then executes the goal.
+
+
+
+
+4). What are the different phases of the default life cycle of maven?
+
+Answer: The default Maven lifecycle consists of 8 major steps or phases for compiling, testing, building and installing a given Java project as specified below:
+
+Validate: This step validates if the project structure is correct. For example – It checks if all the dependencies have been downloaded and are available in the local repository.
+
+Compile: It compiles the source code, converts the .java files to .class and stores the classes in target/classes folder.
+
+Test: It runs unit tests for the project.
+
+Package: This step packages the compiled code in distributable format like JAR or WAR.
+
+Integration test: It runs the integration tests for the project.
+
+Verify: This step runs checks to verify that the project is valid and meets the quality standards.
+
+Install: This step installs the packaged code to the local Maven repository.
+
+Deploy: It copies the packaged code to the remote repository for sharing it with other developers.
+
+
+
+5). What are the different types of Maven repositories?
+
+Answer: There are 3 types of maven repository:
+
+-Local Repository
+-Central Repository
+-Remote Repository
+
+
+
+6). Explain what a Primary key, Candidate Key, Prime Attributes, and Non-prime Attributes is.
+
+Answer:
+A primary key is an attribute or group of attributes used to uniquely identify any record in a table. The values of a primary key cannot be duplicated.
+
+The minimal set of attributes that can uniquely identify a tuple is known as a candidate key.
+
+A prime attribute is one of the attributes that make up the candidate key. In addition to being called prime attributes, key attributes is another name for this type of attribute. It is also present in all of the candidate keys.
+
+Non-prime attributes are those attributes of the relationships that do not present in any of the possible candidate keys of the relation.
+
+
+
+7). What are the rules for a table to be in 1NF, 2NF, and 3NF ?
+
+Answer: 
+1NF	A relation is in 1NF if it contains an atomic value.
+2NF	A relation will be in 2NF if it is in 1NF and all non-key attributes are fully functional dependent on the primary key.
+3NF	A relation will be in 3NF if it is in 2NF and no transition dependency exists.
+
+
+
+
+
+
+
+
