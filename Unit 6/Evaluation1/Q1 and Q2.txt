@@ -1,0 +1,27 @@
+Question 1: What are the advantages of using Hibernate over JDBC?
+
+Answer: Hibernate creates more shorter and optimized code. For example, by creating the connection while using Hibernate the developer should not need to write the complex queries because HCL is there to ease the written query whereas in JDBC it is the complete responsibility of the developer to program the queries.
+
+----------------------------------------------------------------------------------------------------------
+
+Question 2: Explain difference between JPA and Hibernate?
+
+Answer: JPA is described in javax.persistence package ----- 
+	It describes the handling of relational data in Java applications.                                                                        	
+	It is not an implementation. It is only a Java specification.	
+
+
+	Hibernate is described in org.hibernate package.
+	Hibernate is an Object-Relational Mapping (ORM) tool that is used to save the Java objects in the relational database system.
+	Hibernate is an implementation of JPA. Hence, the common standard which is given by JPA is followed by Hibernate.
+
+
+
+Question: Explain the Life-cycle of Entity class with example.
+
+Answer: The entity lifecycle model is one of the core concepts of JPA and all its implementations. Even though it’s not directly visible when working with JPA’s EntityManager, it affects all operations you perform. The different states of the model define how your persistence provider, e.g. Hibernate, handles your entity objects. This includes if it loads it from the database or gets it from an internal cache, if it persists changes and if it removes the entity.
+
+-Transient
+-Managed
+-Detached
+-Remove
