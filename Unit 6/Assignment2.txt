@@ -1,0 +1,25 @@
+Q1-> Explain Layared Architecture in Business application
+
+Answer: Layered architectures are said to be the most common and widely used architectural framework in software development. It is also known as an n-tier architecture and describes an architectural pattern composed of several separate horizontal layers that function together as a single unit of software.\
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Q2.limitation of JDBC based persistence logic over JPA
+
+Answer: JPA-based applications still use JDBC under the hood. Therefore, when we utilize JPA, our code is actually using the JDBC APIs for all database interactions. In other words, JPA serves as a layer of abstraction that hides the low-level JDBC calls from the developer, making database programming considerably easier.
+
+Q3. Differentiate between Hibernate and JPA
+
+Answer: 
+JPA is described in javax.persistence package.	
+It describes the handling of relational data in Java applications.    
+It is not an implementation. It is only a Java specification.
+It is a standard API that permits to perform database operations.
+As an object-oriented query language, it uses Java Persistence Query Language (JPQL) to execute database operations.
+
+
+Hibernate is described in org.hibernate package.                                                                    	
+Hibernate is an Object-Relational Mapping (ORM) tool that is used to save the Java objects in the relational database system.
+Hibernate is an implementation of JPA. Hence, the common standard which is given by JPA is followed by Hibernate.
+It is used in mapping Java data types with SQL data types and database tables.
+As an object-oriented query language, it uses Hibernate Query Language (HQL) to execute database operations.
