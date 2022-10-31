@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="tr" class="com.masai.Triangle"></bean>
+
+	<bean id="cr" class="com.masai.Circle"></bean>
+	<bean id="clr" class="com.masai.Cylinder"></bean>
+	<bean id="sp" class="com.masai.Shape">
+	
+		<property name="t" ref="tr"></property>
+		
+
+	</bean>
+
+
+</beans>
