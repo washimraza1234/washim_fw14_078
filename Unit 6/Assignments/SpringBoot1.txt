@@ -1,0 +1,14 @@
+Q1) - Explain the Java-based Spring MVC architecture.
+
+Answer:
+Spring MVC framework enables separation of modules namely Model, View and Controller and seamlessly handles the application integration. This enables the developer to create complex applications also using plain java classes. The model object can be passed between view and controller using maps.
+
+
+Q2) What is the HTTP protocol, explain about the HTTP request and the HTTP response.
+
+Answer:
+HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser.
+
+Q3)- What is the difference between WebApplication and Web-services?
+
+A web application is an application that is accessed through a web browser running on client’s machine whereas a web service is a system of software that allows different machines to interact with each other through a network. Most of the times, web services do not necessarily have a user interface since it is used as a component in an application, while a web application is a complete application with a GUI. Furthermore, web services can be used to communicate or transfer data between web applications running on different platforms.
