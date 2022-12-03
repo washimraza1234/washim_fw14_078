@@ -1,0 +1,26 @@
+Q1: Name some important classes available in java.io package
+
+BufferedInputStream
+BufferedOutputStream
+BufferedReader
+BufferedWriter
+ByteArrayInputStream
+ByteArrayOutputStream
+CharArrayReader
+
+
+Ques 2: Difference between FileReader and BufferedFileReader
+
+It is used to read characters from any type of character input stream (String, Files, etc.)
+It can be used only for reading files
+Buffer	Uses Buffer internally to read characters from	Doesn’t use Buffer. 
+Directly reads from the file by accessing the hard drive.
+Much more efficient for reading files	
+Less efficient 
+BufferedReader can be used to read a single character at a time as well as a line at a time.
+It can read only one character at a time, can not read lines
+
+Ques 3: What is the most efficient way to read the content of a text file according to you
+in java
+
+If you want to read file line by line or based on some java regular expression, Scanner is the class to use. Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace.
